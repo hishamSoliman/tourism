@@ -1,0 +1,126 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+.shadow-1, .language-dropdown ul.lang-list, .language-dropdown label {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow-2, .language-dropdown.open label {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.shadow-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+
+
+.language-dropdown {
+    /* display: inline-block; */
+    /* margin: 20px 50px; */
+    position: absolute;
+}
+
+    .language-dropdown .lang-en {
+        border-left: 4px solid #e2162c;
+    }
+
+        .language-dropdown .lang-en .flag {
+            background-image: url("http://findicons.com/files/icons/282/flags/48/united_states_of_america_usa.png");
+        }
+
+    .language-dropdown .lang-pt {
+        border-left: 4px solid #1abc9c;
+    }
+
+    .language-dropdown .lang-Ar .flag {
+        background-image: url("http://icons.iconarchive.com/icons/custom-icon-design/all-country-flag/48/Saudi-Arabia-Flag-icon.png");
+    }
+
+    .language-dropdown .lang-Ar {
+        border-left: 4px solid #00b752;
+    }
+
+       
+
+    .language-dropdown label, .language-dropdown ul li {
+        display: block;
+        width: 50px;
+        height: 38px;
+        background: #fff;
+        padding: 0px 6px;
+        cursor: pointer;
+    }
+
+    .language-dropdown ul.lang-list {
+        position: relative;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+
+        .language-dropdown ul.lang-list li {
+            border-bottom: 1px solid #ececec;
+        }
+
+            .language-dropdown ul.lang-list li:last-child {
+                border-bottom-right-radius: 2px;
+                border-bottom-left-radius: 2px;
+            }
+
+            .language-dropdown ul.lang-list li.selected {
+                display: none;
+            }
+
+    .language-dropdown label {
+        position: relative;
+        border-bottom: 1px solid #ececec;
+        border-radius: 3px;
+        z-index: 2;
+    }
+
+    .language-dropdown .lang-flag .flag, .language-dropdown .lang-list .lang .flag {
+        float: left;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        background-size: 35px 35px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .language-dropdown.open ul.lang-list {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .language-dropdown.open label {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+.animate, .lang-flag, .lang-list {
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}

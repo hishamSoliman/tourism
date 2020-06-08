@@ -1,0 +1,349 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --nav-font-size: 1.3rem;
+    --trans-bg: rgba(0, 0, 0, 0.2);
+    --trans-bg-dark: rgba(0, 0, 0, 0.35);
+    --round-borders: 15px;
+}
+
+/* =================== */
+/* text styles */
+/* =================== */
+
+p {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    a:hover,
+    a:focus {
+        text-decoration: inherit;
+        color: inherit;
+        cursor: default;
+    }
+
+/* reset ul, li styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 1.5rem;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.heading-big,
+.heading-medium,
+.heading-small {
+    font-family: "Archivo Black", sans-serif;
+}
+
+.heading-big {
+    font-size: 2.8rem;
+    padding: 2.5rem 0 1rem 0;
+}
+
+.heading-medium {
+    font-size: 2rem;
+}
+
+.heading-small {
+    font-size: 1.5rem;
+}
+
+/* =================== */
+/* images */
+/* =================== */
+img {
+    width: 100%;
+    height: auto;
+}
+
+.color {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
+    filter: blur(0.4rem);
+    transition: all 0.1s;
+}
+
+/* =================== */
+/* containers */
+/* =================== */
+.container {
+    width: 95%;
+}
+
+/* =================== */
+/* main navigation */
+/* =================== */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.main-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 60rem;
+    font-size: var(--nav-font-size);
+}
+
+    .main-nav a {
+        background: var(--trans-bg);
+        border-radius: var(--round-borders);
+        padding: 0.6rem 1.1rem;
+    }
+
+/* =================== */
+/* main logo */
+/* =================== */
+
+.main-logo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    line-height: 2.5rem;
+    width: 90% !important;
+    text-shadow: #00000047 0px 0px 10px;
+}
+
+/* =================== */
+/* slider styles */
+/* =================== */
+
+/* wraps entire slider */
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+
+/* =================== */
+/* slider controls*/
+/* =================== */
+
+.control {
+    display: block;
+    width: 40px;
+    height: 10px;
+    color: #fff;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    background: var(--trans-bg-dark);
+    border-radius: var(--round-borders);
+    padding: 2rem;
+    text-align:center;
+}
+
+    .prev:hover,
+    .next:hover {
+        transform: scale(1.5, 1.5);
+    }
+
+.flash {
+    animation: flash 0.5s linear;
+}
+
+@keyframes flash {
+    50% {
+        opacity: 0;
+    }
+}
+
+.slider-container {
+    /* 
+  n variable holds number of images to make .container wide enough 
+  to hold all its image children 
+  that still have the same width as its parent
+  */
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    width: 100%; /* fallback */
+    width: calc(var(--n) * 100%);
+    max-height: 100vh;
+    transform: translate(calc(var(--i, 0) / var(--n) * -100% + var(--tx, 0px)));
+}
+
+/* transition animation for the slider */
+.smooth {
+    /* f computes actual animation duration via JS */
+    transition: transform calc(var(--f, 1) * 0.5s) ease-out;
+}
+
+/* =================== */
+/* images for the slider */
+/* =================== */
+img {
+    height: 100vh;
+    width: 100%; /* can't take this out as it breaks Chrome */
+    width: calc(100% / var(--n));
+    pointer-events: none;
+    object-fit: cover;
+}
+
+/* =================== */
+/* main footer */
+/* =================== */
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    font-size: var(--nav-font-size);
+    background: var(--bg-nav);
+    z-index: 1;
+}
+
+.section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .section-footer ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-footer i {
+        background: var(--trans-bg-dark);
+        border-radius: var(--round-borders);
+        padding: 15px;
+        font-size: 2.2rem;
+    }
+
+.explore {
+    display: block;
+    background: rgba(255, 255, 255, 0.84);
+    color: #696969;
+    border-radius: var(--round-borders);
+    margin-left: 1.8rem;
+    padding: 30px !important;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1110px) {
+    li {
+        padding: 0;
+    }
+
+    /* create mobile icon */
+    .mobile-menu div {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        border-radius: 0.2rem;
+    }
+
+    /* hide main navigation on mobile */
+    .main-nav {
+        display: none;
+    }
+
+    /* re-arrange footer for mobile */
+    .main-footer {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section-footer i {
+        font-size: 1.5rem;
+        margin: 2.1rem;
+    }
+
+    .prev,
+    .next {
+        padding: 1rem;
+        margin: 2.1rem;
+    }
+
+        .prev:hover,
+        .next:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+    .explore {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin-left: 0;
+        margin: 0.1rem;
+        white-space: pre-wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-header {
+        padding: 0.5rem 1rem;
+    }
+
+    .main-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2rem;
+        padding: 0;
+        width: 90% !important;
+        text-shadow: #00000047 0px 0px 10px;
+    }
+}
+
+
+

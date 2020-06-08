@@ -1,0 +1,194 @@
+﻿
+.Attraction-wrap {
+    /*height: 100%;*/
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #f3f3f3;
+    padding: 5px 0px;
+    height: 134px;
+    overflow: hidden;
+    transition: height .5s ease-in;
+}
+
+.Attraction-wrap-off {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: height .5s ease-out;
+}
+
+.CardWrap {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    float: left;
+}
+
+.card {
+    display: flex;
+    flex: 0 0 auto;
+    background: #fff;
+    max-width: 100%;
+    margin: 80px 0;
+    border-radius: 0;
+    border: none !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    /*margin: 15px;*/
+    margin: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+    flex-direction: row !important;
+}
+
+.card-pic-wrap {
+    border-radius: 5px 0 0 5px;
+    width: 125px;
+    flex: 0 0 auto;
+    position: relative;
+    background: linear-gradient(to bottom, #9fd483, #8dc26f);
+}
+
+    .card-pic-wrap img {
+        position: absolute;
+        bottom: 3em;
+        left: 50%;
+        margin-left: -175px;
+        width: 350px;
+        -webkit-box-reflect: below -1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, transparent), to(rgba(250, 250, 250, 0.15)));
+    }
+
+.card-content {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+.img-loc-card img {
+    width: 125px;
+    height: 100%;
+    border-radius: 0;
+}
+
+/*@media (max-width: 790px) {
+
+
+    .wrap {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card-pic-wrap {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+        .card-pic-wrap img {
+            bottom: 20px;
+            position: relative;
+        }
+
+    .card-content {
+        padding: 2em 2em 1em;
+    }
+}*/
+
+.fa-heart-o {
+    color: #f26e6e;
+    cursor: pointer;
+}
+
+.fa-bookmark {
+    color: #0583ba;
+    cursor: pointer;
+}
+
+.fa-bookmark-o {
+    color: #0583ba;
+    cursor: pointer;
+}
+
+.fa-heart {
+    color: #f26e6e;
+    cursor: pointer;
+}
+
+i.love {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+    i.love.fa.fa-heart {
+        font-size: 20px;
+    }
+
+    i.love.fa.fa-heart-o {
+        font-size: 20px;
+    }
+
+
+.cycle-carousel-wrap {
+    width: 100%;
+}
+
+.card.cycle-slide.cycle-slide-active {
+    display: flex !important;
+}
+
+.card.cycle-slide {
+    display: flex !important;
+}
+
+
+.Attraction {
+    height: 144px;
+}
+
+.AttractionOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 135px;
+    margin-top: -5px;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 1;
+}
+
+.Attraction:hover .AttractionOverlay {
+    opacity: 1;
+}
+
+.AttractionOverlay .text {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+
+.owl-carousel .owl-item img {
+    width: auto;
+    height: 124px;
+}

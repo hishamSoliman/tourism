@@ -1,0 +1,95 @@
+﻿
+
+#background-wrap2 {
+    display: block !important;
+}
+
+
+
+#BGSug {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: 100% 100%;
+    /*background-image: url(../img/saudi3.png)*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+
+
+.fadein img {
+    position: fixed;
+    left: 0;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 18s;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    53% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    53% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#f1 {
+    background-color: lightblue;
+}
+
+#f2 {
+    -webkit-animation-delay: -12s;
+    background-color: yellow;
+}
+
+#f3 {
+    -webkit-animation-delay: -6s;
+    background-color: lightgreen;
+}

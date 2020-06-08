@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 21.63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #56cbe7;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>cloud_3</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_7" data-name="Layer 7">
+      <path class="cls-1" d="M99,20.63H85.67c-1-5-5.06-7.81-9.94-7.81a10.19,10.19,0,0,0-3.59.76A13.46,13.46,0,0,0,50.43,4.53a10.17,10.17,0,0,0-17.87,6.65,10.32,10.32,0,0,0,.06,1.11A7.12,7.12,0,0,0,24,16.81a10.64,10.64,0,0,0-3.09-.66,9.89,9.89,0,0,0-8.73,4.47H0"/>
+    </g>
+  </g>
+</svg>

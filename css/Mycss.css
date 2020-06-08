@@ -1,0 +1,670 @@
+﻿/*.header_area .navbar .nav .nav-item .nav-link {
+    color: #014650 !important;
+}
+
+.header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+    color: #7a61dc !important;
+}*/
+.mapviewer {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 280px);
+    z-index: 1;
+    display: none;
+    border: 1px solid rgb(221, 221, 221);
+    webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+    .mapviewer iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 0 0 0 0;
+        opacity: 1;
+    }
+
+.map-off {
+    opacity: 0 !important;
+    height: 0px;
+    -webkit-transition: height .5s linear;
+    -moz-transition: height .5s linear;
+    -ms-transition: height .5s linear;
+    -o-transition: height .5s linear;
+    transition: height .5s linear;
+}
+
+.map-on {
+    opacity: 1 !important;
+    height: calc(100vh - 260px);
+    overflow: hidden;
+    -webkit-transition: height .5s linear;
+    -moz-transition: height .5s linear;
+    -ms-transition: height .5s linear;
+    -o-transition: height .5s linear;
+    transition: height .5s linear;
+    padding-top: 0 !important;
+}
+
+.VideoBG {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.home_banner_area {
+    background: none !important;
+}
+
+img.download-mobile {
+    width: 200px;
+}
+
+.header_area .navbar .primary-btn {
+    border: 1px solid #fff;
+    padding: 7px 28px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+    .header_area .navbar .primary-btn:hover {
+        color: #009696;
+        border: 1px solid #009696;
+    }
+
+.header_area .navbar {
+    background: linear-gradient(to bottom, rgba(84, 83, 82, 0.75) 0%,rgba(0, 0, 0, 0) 100%) !important;
+    /*box-shadow: linear-gradient(to bottom, rgb(0, 0, 0) 0%,rgba(0, 0, 0, 0) 100%)*/
+}
+
+
+.header_area.navbar_fixed .main_menu {
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.27);
+}
+
+.header_area .navbar .nav .nav-item .nav-link {
+    color: #2d5769;
+}
+
+.navbar-toggler span {
+    background: #2d5769 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #48d2e6 !important;
+}
+
+.header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+    color: #48d2e6;
+}
+
+.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
+    background: #48d3e8;
+    color: #fff !important;
+}
+
+.banner_content {
+    width: 75%;
+}
+
+.Map-icons i.fa {
+    color: #fff;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.filter-label {
+    vertical-align: top;
+    font-size: 18px;
+    color: #fff;
+    width: fit-content;
+    position: absolute;
+    padding-top: 10px;
+}
+
+
+/*Cloud*/
+body {
+    overflow-x: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+    left: 0;
+    padding-top: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateCloud {
+    0% {
+        margin-left: -200px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+        margin-left: -200px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -200px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+
+@-webkit-keyframes animateCloud50 {
+    0% {
+        margin-left: 50%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateCloud50 {
+    0% {
+        margin-left: 50%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateCloud50 {
+    0% {
+        margin-left: 50%;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+
+@-webkit-keyframes animateShip {
+    0% {
+        margin-left: 30px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@-moz-keyframes animateShip {
+    0% {
+        margin-left: 30px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes animateShip {
+    0% {
+        margin-left: 30px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+
+
+@-webkit-keyframes animateShip2 {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 30px;
+    }
+}
+
+@-moz-keyframes animateShip2 {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 30px;
+    }
+}
+
+@keyframes animateShip2 {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 30px;
+    }
+}
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateCloud 70s linear infinite;
+    -moz-animation: animateCloud 70s linear infinite;
+    animation: animateCloud 70s linear infinite;
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform: scale(0.65);
+}
+
+.x2 {
+    -webkit-animation: animateCloud50 40s linear infinite;
+    -moz-animation: animateCloud50 40s linear infinite;
+    animation: animateCloud50 40s linear infinite;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+.x3 {
+    -webkit-animation: animateCloud 60s linear infinite;
+    -moz-animation: animateCloud 60s linear infinite;
+    animation: animateCloud 60s linear infinite;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.x4 {
+    -webkit-animation: animateCloud50 50s linear infinite;
+    -moz-animation: animateCloud50 50s linear infinite;
+    animation: animateCloud50 50s linear infinite;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.xPlane {
+    -webkit-animation: animateCloud 15s linear infinite;
+    -moz-animation: animateCloud 15s linear infinite;
+    animation: animateCloud 15s linear infinite;
+}
+
+.xShip1 {
+    -webkit-animation: animateShip 95s linear infinite;
+    -moz-animation: animateShip 95s linear infinite;
+    animation: animateShip 95s linear infinite;
+    position: absolute;
+    margin-top: 550px;
+}
+
+.xShip2 {
+    -webkit-animation: animateShip2 65s linear infinite;
+    -moz-animation: animateShip2 65s linear infinite;
+    animation: animateShip2 65s linear infinite;
+    position: absolute;
+    margin-top: 560px;
+}
+
+.animationSea {
+    background-image: url(../img/Animation/banner-water.gif);
+    background-position-x: right;
+    height: 126px;
+    width: 100%;
+    position: absolute;
+    margin-top: 541px;
+    z-index: -1;
+}
+
+/* OBJECTS */
+
+.cloud1 {
+    background-image: url('../img/Animation/cloud_1_header.svg');
+    height: 35px;
+    position: relative;
+    width: 170px;
+}
+
+.cloud2 {
+    background-image: url('../img/Animation/cloud_2_header.svg');
+    height: 35px;
+    position: relative;
+    width: 170px;
+}
+
+.cloud3 {
+    background-image: url('../img/Animation/cloud_3_header.svg');
+    height: 35px;
+    position: relative;
+    width: 170px;
+}
+
+.cloud4 {
+    background-image: url('../img/Animation/cloud_4_header.svg');
+    height: 35px;
+    position: relative;
+    width: 150px;
+}
+
+.Plane1 {
+    background-image: url('../img/Animation/banner-airplane_1.svg');
+    height: 50px;
+    position: relative;
+    width: 130px;
+}
+
+.Ship1 {
+    background-image: url('../img/Animation/boat.svg');
+    height: 50px;
+    position: relative;
+    width: 73px;
+}
+
+.Ship2 {
+    background-image: url(../img/Animation/Yacht.png);
+    height: 67px;
+    position: relative;
+    width: 116px;
+    background-size: contain;
+}
+
+
+/*End Cloud*/
+
+/*Right Slide Panel*/
+.panel-right {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: calc(100% - 122px);
+    float: right;
+    /* background-color: #f5f5fa; */
+    position: fixed;
+    width: 0 !important;
+    right: 0;
+    /* margin-top: -105px; */
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    overflow: auto;
+}
+
+.panel-right-open {
+    width: 350px !important;
+    z-index: 1;
+    webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 15px 0 15px;
+}
+
+.ImagesG-close {
+    font-size: 30px;
+    text-shadow: #00000047 0px 0px 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    color: #fff;
+    z-index: 1;
+}
+/*End Right Slide Panel*/
+
+
+.landmark {
+    text-align: left;
+    display: inline-block;
+    width: fit-content;
+    float: left;
+    margin-left: 90px;
+}
+
+    .landmark > ul {
+        list-style: none;
+        margin-bottom: 0 !important;
+    }
+
+        .landmark > ul li {
+            display: inline-block;
+            background-color: #b1b1b1;
+            margin: 5px;
+            border-radius: 50%;
+        }
+
+            .landmark > ul li a {
+                color: white;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                text-decoration: none;
+                height: 35px;
+                width: 35px;
+            }
+
+                .landmark > ul li a i {
+                    font-size: initial;
+                    margin-top: 5px;
+                }
+
+
+
+            .landmark > ul li.Landmark-on {
+                background-color: #3fab1b;
+            }
+
+    .landmark > .panel-heading {
+        padding-left: 0 !important;
+    }
+
+@media (max-width: 991px) {
+    .home_banner_area .banner_inner {
+        min-height: unset !important;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .home_banner_area .banner_inner {
+        min-height: unset !important;
+        min-height: auto;
+    }
+}
+
+.tooltip > .tooltip-inner {
+    background-color: rgb(221, 221, 221) !important;
+    color: #000000 !important;
+}
+
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: rgb(221, 221, 221) !important;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+    border-top-color: rgb(221, 221, 221) !important;
+}
+
+
+
+.forcast-weatherwidget {
+    height: 0;
+    overflow: hidden;
+    /*transition: height 2s ease-out;*/
+}
+
+.forcast-weatherwidget-open {
+    height: auto !important;
+    /*transition: height 2s ease-in;*/
+}
+
+
+/*Map Button*/
+.MapbuttonWrapper {
+    position: absolute;
+    right: 20px;
+}
+
+.Mapbutton {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100;
+    font-family: "Segoe UI";
+    letter-spacing: 1px;
+}
+
+    /*.Mapbutton:before {
+        border-radius: 100px;
+        border: 2px solid #3fab1b;
+        box-shadow: 0 0 15px rgba(0, 255, 78, 0.15), 0 0 15px rgba(11, 255, 0, 0.15) inset;
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -25px;
+        margin-top: -25px;
+        opacity: 1;
+        transform: scale(1);
+        transition: all 300ms;
+    }*/
+
+    .Mapbutton:hover:before {
+        transform: scale(1.05);
+    }
+
+    .Mapbutton.circle {
+        background: #3fab1b;
+        border: none;
+        border-radius: 900px;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        width: 35px;
+        height: 35px;
+        line-height: 40px;
+        position: relative;
+        margin: auto;
+        margin-top: 25px;
+        transition: 0.5s;
+    }
+
+        .Mapbutton.circle i {
+            font-size: 20px;
+        }
+
+        .Mapbutton.circle:hover {
+            background: #8bc34a;
+            padding: -2px;
+        }
+
+
+/*End Map Button*/
+
+
+/*Switch Button*/
+.toggleSetting {
+    direction: rtl;
+    position: relative;
+    float: right;
+    display:none;
+    /*display: inline-flex;*/
+}
+
+.Switch {
+    display: block;
+    opacity: 0;
+    margin-top: -8px;
+}
+#ForcastSwitch {
+    margin-top: -8px;
+}
+#AttractionSwitch {
+    margin-top: -25px;
+}
+
+.SwitchName {
+    margin-bottom: 0px !important;
+    vertical-align: top;
+    margin-right: 5px;
+    margin-left: 25px;
+}
+
+.SwitchLbl {
+    position: relative;
+    width: 40px;
+    height: 22px;
+    display: inline-block;
+    background: #666666;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+    .SwitchLbl:after {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 1px;
+        width: 19px;
+        height: 19px;
+        background: #FFF;
+        border-radius: 50%;
+        box-shadow: 1px 3px 6px #666666;
+    }
+
+.Switch:checked + .SwitchLbl {
+    background: #3fab1b;
+}
+
+    .Switch:checked + .SwitchLbl:after {
+        left: auto;
+        right: 2px;
+    }
+
+
+
+
+
+
+/*End Switch Button*/
